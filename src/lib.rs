@@ -509,7 +509,7 @@ impl Data {
     //   format specified via the `sample_format` argument.
     // - The `sample_format` must correctly represent the underlying sample data delivered/expected
     //   by the stream.
-    pub(crate) unsafe fn from_parts(
+    pub unsafe fn from_parts(
         data: *mut (),
         len: usize,
         sample_format: SampleFormat,
